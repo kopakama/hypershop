@@ -32,7 +32,47 @@ img{
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
-    padding: 0
+    padding: 0;
+
+    z-index: 0;
+}
+
+.circles{
+    width: 512px;
+    height: 512px;
+    border-radius: 50%;
+    border: 1px solid #d7d7d7;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    z-index: -1;   
+}
+
+.circles::after{
+    content: "";
+    width: 886px;
+    height: 886px;
+    border-radius: 50%;
+    border: 1px solid #d7d7d7;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    z-index: -1;
+}
+
+.circles--bt{
+    width: 60%;
+    height: 110%;
+    top: 70%;
+}
+
+.circles--bt::after{
+    width: 193%;
+    height: 175%;
 }
 
 @import "intro.less";
@@ -41,3 +81,4 @@ img{
 @import "abilities.less";
 @import "about.less";
 @import "complect.less";
+@import "buycar.less";

@@ -1,0 +1,134 @@
+// main: main.less
+
+.buy-car{
+    background: url("../img/buy-car/bg.jpg") center no-repeat;
+    background-size: cover;
+
+    max-width: 100%;
+    height: 1000px;
+
+    margin: 77px 0;
+
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buy-car__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buy-car__item:first-child{
+    max-width: 570px;
+    margin-right: 50px;
+
+}
+
+.buy-car__item:last-child{
+    border-radius: 10px;
+    border: 3px solid #40af19;
+
+    max-width: 550px;
+    height: 742px;
+
+    padding: 47px 38px;
+}
+
+.buy-car__photos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    width: 571px;
+    height: 450px;
+}
+
+.buy-car__img img{
+    max-width: 100%;
+    height: auto;
+}
+
+.payship{
+    display: flex;
+    justify-content: space-between;
+}
+
+.payship__item{
+    color: #f3f1f7;
+    font-size: 11px;
+    font-weight: bold;
+    max-width: 272px;
+
+    padding-left: 55px;
+
+    position: relative;
+
+    &:first-child::before{
+        content: "";
+        background: url("../img/buy-car/money.png");
+        width: 47px;
+        height: 45px;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    &:last-child::before{
+        content: "";
+        background: url("../img/buy-car/ship.png");
+        width: 62px;
+        height: 41px;
+
+        position: absolute;
+        top: 0;
+        left: -10px;
+        z-index: 1;
+    }
+}
+
+
+
+.form__title{
+    color: #f9f9f9;
+    font-family: "Days", sans-serif;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    margin: 0 auto;
+
+    span{
+        font-size: 48px;
+    }
+}
+
+.form__price{
+    .old{
+    color: #f9f9f9;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: line-through;
+    }
+
+    .new{
+        text-decoration: none;
+
+        background-image: linear-gradient(to bottom, #49cc1b 0%, #245b10 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0 0 21px rgba(14, 155, 17, 0.27);
+        color: #f9f9f9;
+        font-size: 36px;
+        font-weight: bold;
+
+        margin-right: 20px;
+    }
+}
+
