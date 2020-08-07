@@ -1,0 +1,190 @@
+// main: main.less
+
+
+//abilities
+
+.abilities{
+    position: relative;
+}
+
+.abilities__title{
+    max-width: 587px;
+    color: #131313;
+    font-family: "Days", sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    line-height: 80px;
+    text-transform: uppercase;
+    letter-spacing: 7.5px;
+
+    margin: 0 auto;
+    padding-left: 9px;
+
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.abilities__photo{
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -76%, 0);
+}
+
+.abilities__photo::after{
+        content: "";
+        background-image: url("../img/car-shadow.png");
+
+        width: 645px;
+        height: 477px;
+        
+        position: absolute;
+        bottom: -193px;
+        right: -39px;
+
+        z-index: -1;
+}
+
+.abilities__circles{
+    /* Style for "Эллипс 3" */
+    width: 512px;
+    height: 512px;
+    border-radius: 50%;
+    border: 1px solid #d7d7d7;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    z-index: -1;   
+}
+
+.abilities__circles::after{
+    content: "";
+    width: 886px;
+    height: 886px;
+    border-radius: 50%;
+    border: 1px solid #d7d7d7;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    z-index: -1;
+}
+
+//cards
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+
+    width: 301px;
+    height: 409px;
+    box-shadow: 0 0 26px 1px rgba(21, 22, 21, 0.22);
+    border-radius: 5px;
+    background-color: #ffffff;
+
+    &::before{
+        content: "";
+        width: 292px;
+        height: 409px;
+        box-shadow: 0 0 26px 1px rgba(21, 22, 21, 0.22);
+        border-radius: 5px;
+        background-color: #ffffff;
+
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+}
+
+.card__img {
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+}
+
+.flex__bottom .card__item{
+    .card__img {
+        z-index: 1;
+        position: absolute;
+        top: -13px;
+    }
+
+}
+
+
+
+
+
+
+.card__title{
+    font-size: 18px;
+    font-weight: bold;
+    color: #131313;
+    text-transform: uppercase;
+    letter-spacing: 1.35px;
+    text-align: center;
+}
+
+.card__text{
+    width: 246px;
+    color: #131313;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+
+    margin: 6px 0 13px;
+}
+
+.card__text--db{
+    margin-bottom: 38px;
+}
+
+.flex__bottom{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 46px;
+}
+
+//buy
+
+.price--black div{
+    color: #131313;
+}
+
+
+
+.buy--abilities{
+    margin-left: 147px;
+}
+
+.btn--abilties{
+    padding: 15px 67px;
+    
+    font-size: 28px;
+    letter-spacing: 1.8px;
+
+    padding: 20px 79px;
+    z-index: 1000;
+}
+
+

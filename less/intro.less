@@ -1,0 +1,152 @@
+// main: main.less
+
+//intro
+.intro
+{
+    background: url("../img/intro/bg.jpg") center no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    height: auto;
+    min-height: 793px;
+
+    padding-top: 120px;
+
+    
+}
+
+.intro__inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: auto;
+    position: relative;
+
+}
+
+.intro__title{
+    font-family: 'Days', sans-serif;
+    text-transform: uppercase;
+    font-size: 72px;
+    line-height: 72px;
+
+    max-width: 689px;
+}
+
+.intro__img{
+    position: absolute;
+    right: -107px;
+    bottom: -159px;
+    z-index: 1;
+    
+    width: 71%;
+}
+
+
+//features
+
+.features{
+    
+    height: 100%;
+    min-height: 163px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    margin: 50px 0;
+    
+}
+
+.features__text{
+    font-size: 16px;
+    letter-spacing: 1.2px;
+
+}
+
+.features__item{
+    padding-left: 80px;
+
+    position: relative;
+}
+
+
+.features__item::before{
+    content: "";
+    display: block;
+    width: 56px;
+    height: 58px;
+    
+    position: absolute;
+    top: -20px;
+    left: 0;
+}
+
+.features__item:first-child::before{
+    background: url("../img/intro/suspension.png");
+}
+
+.features__item:nth-child(2)::before{
+    background: url("../img/intro/icon.png");
+}
+
+.features__item:last-child::before{
+    height: 59px;
+    background: url("../img/intro/giftbox.png");
+}
+
+//buy
+.buy{
+    display: flex;
+    align-items: center;
+}
+
+.btn{
+    display: inline-block;
+
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #f3f1f7;
+    font-weight: bold;
+
+    padding: 15px 57px;
+
+    background:linear-gradient(to bottom, #49cc1b, #245b10);
+    border-radius: 10px;
+
+    box-shadow: 
+        0 0 18px 3px #0e9b11;
+
+    &:hover{
+        background: linear-gradient(to bottom, #4ae812, #2c7a11);
+    }
+
+    &:active{
+        background:linear-gradient(to bottom, darken(#49cc1b, 5%), darken(#245b10, 5%));
+    }
+}
+
+
+
+.price{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 25px;
+    
+}
+
+.price__old{
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+.price__act{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1;
+}

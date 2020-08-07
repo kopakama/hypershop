@@ -1,0 +1,153 @@
+// main: main.less
+
+//header
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    width: 100%;
+
+    margin-top: 39px;
+    
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 22px;
+    margin-right: 35px;
+}
+
+// nav
+
+.nav{
+
+    a{
+        text-decoration: none;
+        color: #f3f1f7;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 45%;
+    max-width: 880px;
+    margin: 0 25px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.85px;
+}
+
+
+
+// logo
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    max-width: 432px;
+
+}
+
+.logo__text{
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 1.6;
+
+    width: 278px;
+    margin-left: 15px;
+    
+}
+
+//contacts
+
+.contacts{
+    display: flex;
+    width: 17%;
+    max-width: 281px;
+    min-width: 270px;
+
+    justify-content: space-between;
+    align-items: center;
+
+    
+
+    .contacts__viber{
+        position: relative;
+    
+        width: 34px;
+        height: 34px;
+        background: linear-gradient(to top, #8844cd, #7833a4);
+        border-radius: 50%;
+    
+        img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
+    
+        }
+
+        &:hover{
+            background: linear-gradient(to top, lighten(#8844cd, 10%), lighten(#7833a4, 10%));
+        }
+
+        &:active{
+            background: linear-gradient(to top, darken(#8844cd, 10%), darken(#7833a4, 10%));
+        }
+    }
+    
+    .contacts__whatsapp{
+        .contacts__viber;
+        background-image: linear-gradient(to top, #236020, #408b3a);
+        
+        &:hover{
+            background: linear-gradient(to top, lighten(#236020, 10%), lighten(#408b3a, 10%));
+        }
+
+        &:active{
+            background: linear-gradient(to top, darken(#236020, 10%), darken(#408b3a, 10%));
+        }
+    }
+    
+}
+
+
+
+
+
+//phone
+
+.phone{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40px;
+}
+
+.phone_num{
+    display: block;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+
+.phone_time{
+    
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+}

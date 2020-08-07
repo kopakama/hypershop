@@ -1,0 +1,104 @@
+// main: main.less
+
+//about
+
+.about{
+    background: url("../img/about/bg.jpg") center no-repeat;
+    background-size: cover;
+
+    max-width: 100%;
+    min-height: 904px;
+
+    margin: 77px 0;
+
+    position: relative;
+}
+
+.about__title{
+    font-family: 'Days', sans-serif;
+    font-size: 72px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: 5.4px;
+
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    span{
+        font-size: 48px;
+        letter-spacing: 3.6px;
+    }
+}
+
+//spect
+
+.specs__photo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-44%);
+    bottom: -136px;
+
+    padding-right: 30px;
+}
+
+.hour1{
+    max-width: 100%;
+    
+    position: absolute;
+    bottom: 211px;
+    left: 131px;
+}
+
+.specs__img{
+    width: 993px;
+    height: auto;
+}
+
+.specs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    text-align: center;
+
+    padding-top: 32%;
+}
+
+.specs__item{
+    z-index: 100;
+}
+
+.specs__about{
+    font-size: 30px;
+    background: linear-gradient(to bottom, #49cc1b 0%, #245b10 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+    
+    color: #49cc1b;
+    text-shadow: 0 0 5px rgba(14, 155, 17, 0.22);
+    
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.specs__num{
+    .specs__about;
+    font-size: 100px;
+    letter-spacing: 7.5px;
+    font-weight: bold;
+}
+
+.specs__text{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+
+    margin-top: 20px;
+
+    max-width: 234px;
+}

@@ -1,0 +1,43 @@
+// main: main.less
+@font-face {
+    font-family: "Days";
+    src: url("../fonts/Days.otf");
+}
+
+body{
+    margin: 0;
+    line-height: 1.6;
+    letter-spacing: 1;
+    font-family: "Montserrat", sans-serif;
+    color: #f3f1f7;
+
+    background: url("../img/kvadratik.jpg");
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    display: block;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0
+}
+
+@import "intro.less";
+@import "header.less";
+@import "video.less";
+@import "abilities.less";
+@import "about.less";
+@import "complect.less";
