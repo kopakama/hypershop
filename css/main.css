@@ -66,6 +66,14 @@ img {
   width: 193%;
   height: 175%;
 }
+.circles--min {
+  width: 67%;
+  height: 67%;
+}
+.circles--min::after {
+  width: 175%;
+  height: 175%;
+}
 .intro {
   background: url("../img/intro/bg.jpg") center no-repeat;
   background-size: cover;
@@ -729,6 +737,18 @@ img {
   max-width: 100%;
   height: auto;
 }
+.buy-car__stick {
+  width: 15%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.buy-car__rock {
+  width: 4%;
+  position: absolute;
+  bottom: 17%;
+  right: 5%;
+}
 .payship {
   display: flex;
   justify-content: space-between;
@@ -900,4 +920,81 @@ input:-webkit-autofill {
   line-height: 24px;
   margin-left: 5px;
   cursor: pointer;
+}
+.gift__photo {
+  position: relative;
+  max-width: 722px;
+  margin-left: -90px;
+}
+.gift__img {
+  max-width: 100%;
+  height: auto;
+}
+.gift__stick1 {
+  width: 16%;
+  position: absolute;
+  bottom: 0%;
+  right: 80%;
+}
+.gift__stick2 {
+  width: 17%;
+  position: absolute;
+  bottom: 43%;
+  right: -9%;
+}
+.gift__rock {
+  width: 9%;
+  position: absolute;
+  bottom: 18%;
+  right: 87%;
+}
+.gift__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gift__content {
+  order: -1;
+  max-width: 100%;
+  height: auto;
+}
+.gift__title {
+  max-width: 646px;
+  color: #262525;
+  font-family: "Days", sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.gift__title .green {
+  color: #42b519;
+}
+.gift__title .middle {
+  font-size: 72px;
+  letter-spacing: 2.4px;
+}
+.gift__title .big {
+  font-size: 110px;
+}
+.gift__text {
+  max-width: 540px;
+  color: #262525;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.reviews {
+  background: url("../img/reviews/bg.png") center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+.reviews__title {
+  color: #262525;
+  font-family: "Days", sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
 }
