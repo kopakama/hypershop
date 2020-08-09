@@ -151,7 +151,10 @@ img {
   padding: 15px 57px;
   background: linear-gradient(to bottom, #49cc1b, #245b10);
   border-radius: 10px;
+  border: none;
+  outline: none;
   box-shadow: 0 0 18px 3px #0e9b11;
+  cursor: pointer;
 }
 .btn:hover {
   background: linear-gradient(to bottom, #4ae812, #2c7a11);
@@ -985,10 +988,20 @@ input:-webkit-autofill {
   line-height: 1.2;
 }
 .reviews {
-  background: url("../img/reviews/bg.png") center no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: auto;
+  margin-top: 170px;
+}
+.reviews__buttons {
+  max-width: 490px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 19px;
+  font-weight: bold;
+  margin: 30px auto 46px;
+}
+.btn--reviews {
+  padding: 15px 15px;
+  max-width: 240px;
 }
 .reviews__title {
   color: #262525;
@@ -997,4 +1010,72 @@ input:-webkit-autofill {
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
+}
+.btn.disactive {
+  background: none;
+  border-radius: 10px;
+  border: 2px solid #000000;
+  box-shadow: none;
+  color: #348715;
+}
+.gallery {
+  max-width: 894px;
+  margin: 0 auto;
+}
+.slick-arrow {
+  font-size: 0;
+  display: block;
+  border: 0;
+  background: none;
+  outline: 0;
+  color: transparent;
+  position: absolute;
+  top: 36%;
+  cursor: pointer;
+}
+.slick-arrow::after {
+  background: url("../img/reviews/arrow.png") center no-repeat;
+  content: "";
+  display: block;
+  width: 32px;
+  height: 56px;
+}
+.slick-next {
+  z-index: 1;
+  transform: rotate(180deg) translateY(67%);
+  right: -107px;
+}
+.slick-prev {
+  z-index: 1;
+  transform: translateY(-50%);
+  left: -138px;
+}
+.gallery__item {
+  outline: none;
+}
+.slick-dots {
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 122px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.slick-dots li button {
+  display: inline-block;
+  font-size: 0;
+  border: 0;
+  background: none;
+  outline: 0;
+  color: transparent;
+}
+.slick-dots li::after {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: #c1c1c1;
+  border-radius: 50%;
 }
