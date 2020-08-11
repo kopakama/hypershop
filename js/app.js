@@ -9,7 +9,7 @@ $(function() {
     $('.gallery').slick({
       infinite: true,
       slidesToShow: 3,
-      slidesToScroll: 1,
+      slidesToScroll: 3,
       arrows: true,
       dots: true
     });

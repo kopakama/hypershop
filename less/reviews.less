@@ -1,8 +1,12 @@
 // main: main.less
 
+//reviews
 
 .reviews{
-    margin-top: 170px;
+    margin: 170px 0 100px;
+    height: 735px;  
+
+    position: relative;
 }
 
 .reviews__buttons{
@@ -17,11 +21,6 @@
     margin: 30px auto 46px;
 }
 
-.btn--reviews{
-    padding: 15px 15px;
-    max-width: 240px;
-}
-
 .reviews__title{
     color: #262525;
     font-family: "Days", sans-serif;
@@ -30,6 +29,56 @@
     text-transform: uppercase;
 
     text-align: center;
+}
+
+//bg
+.bg__item:first-child{
+    background: url("../img/reviews/dirt1.png") center;
+    background-size: contain;
+    width: 289px;
+    height: 601px;
+
+    position: absolute;
+    top: 100px;
+    left: 0;
+
+    
+}
+
+.bg__item:nth-of-type(2){
+    background: url("../img/reviews/roll1.png") center;
+    background-size: contain;
+    width: 679px;
+    height: 497px;
+
+    position: absolute;
+    top: -100px;
+    right: 0;
+}
+
+.bg__item:nth-of-type(3){
+    position: absolute;
+    bottom: -120px;
+    left: 0;
+
+    width: 30%;
+    height: auto;
+}
+
+.bg__item:last-of-type{
+    position: absolute;
+    bottom: -60px;
+    right: 0;
+
+    width: 14%;
+    height: auto;
+}
+
+//btn
+
+.btn--reviews{
+    padding: 13px 13px;
+    max-width: 240px;
 }
 
 .btn.disactive{
@@ -41,11 +90,25 @@
     color: #348715;
 }
 
+
+
+//gallery
+
+
 .gallery{
     max-width: 894px;
+    position: relative;
 
     margin: 0 auto;
 }
+
+.gallery__item{
+    outline: none;
+    height: 522px;
+    
+}
+
+//slick
 
 .slick-arrow{
     font-size: 0;
@@ -70,7 +133,7 @@
 
 .slick-next{
     z-index: 1;
-    transform: rotate(180deg) translateY(67%);
+    transform: rotate(180deg) translateY(50%);
     right: -107px;
 }
 
@@ -80,19 +143,17 @@
     left: -138px;
 }
 
-.gallery__item{
-    outline: none;
-}
+
 
 .slick-dots{
     width: 130px;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
     position: absolute;
-    bottom: 122px;
+    bottom: 150px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -108,6 +169,16 @@
     
 }
 
+
+.slick-dots li{
+    font-size: 0;
+    display: block;
+    border: 0;
+    background: none;
+    outline: 0;
+    color: transparent; 
+}
+
 .slick-dots li::after
 {
     content: "";
@@ -117,4 +188,9 @@
     background: #c1c1c1;
     border-radius: 50%;
     
+    cursor: pointer;
+}
+
+.slick-dots li.slick-active::after{
+    background: #43b819;
 }
