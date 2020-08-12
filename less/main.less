@@ -1,88 +1,94 @@
 // main: main.less
 @font-face {
-    font-family: "Days";
-    src: url("../fonts/Days.otf");
+  font-family: "Days";
+  src: url("../fonts/Days.otf");
 }
 
-body{
-    margin: 0;
-    line-height: 1.6;
-    letter-spacing: 1;
-    font-family: "Montserrat", sans-serif;
-    color: #f3f1f7;
+body {
+  margin: 0;
+  line-height: 1.6;
+  letter-spacing: 1;
+  font-family: "Montserrat", sans-serif;
+  color: #f3f1f7;
 
-    background: url("../img/kvadratik.jpg");
+  background: url("../img/kvadratik.jpg");
 }
 
-*, *:before, *:after {
-    box-sizing: border-box;
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6{
-    margin: 0;
-    padding: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
 }
 
-img{
-    display: block;
+img {
+  display: block;
 }
 
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0;
 
-.container{
-    width: 100%;
-    max-width: 1170px;
-    margin: 0 auto;
-    padding: 0;
-
-    z-index: 0;
+  z-index: 0;
 }
 
-.circles{
-    width: 512px;
-    height: 512px;
-    border-radius: 50%;
-    border: 1px solid #d7d7d7;
+.circles {
+  width: 512px;
+  height: 512px;
+  border-radius: 50%;
+  border: 1px solid #d7d7d7;
 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0);
-    z-index: -1;   
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  z-index: -1;
 }
 
-.circles::after{
-    content: "";
-    width: 886px;
-    height: 886px;
-    border-radius: 50%;
-    border: 1px solid #d7d7d7;
+.circles::after {
+  content: "";
+  width: 886px;
+  height: 886px;
+  border-radius: 50%;
+  border: 1px solid #d7d7d7;
 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0);
-    z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  z-index: -1;
 }
 
-.circles--bt{
-    width: 60%;
-    height: 110%;
-    top: 70%;
+.circles--bt {
+  width: 60%;
+  height: 110%;
+  top: 70%;
 }
 
-.circles--bt::after{
-    width: 193%;
-    height: 175%;
+.circles--bt::after {
+  width: 193%;
+  height: 175%;
 }
 
-.circles--min{
-    width: 67%;
-    height: 67%;
+.circles--min {
+  width: 67%;
+  height: 67%;
 }
 
-.circles--min::after{
-    width: 175%;
-    height: 175%;
+.circles--min::after {
+  width: 175%;
+  height: 175%;
 }
 
 @import "intro.less";
