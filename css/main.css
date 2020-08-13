@@ -1030,20 +1030,22 @@ input:-webkit-autofill {
 .bg__item:nth-of-type(3) {
   background: url("../img/reviews/roll2.png") center;
   background-size: contain;
-  width: 534px;
-  height: 500px;
+  width: 521px;
+  height: 431px;
   position: absolute;
-  bottom: -191px;
-  left: 0;
+  bottom: -239px;
+  left: 0px;
+  z-index: 1;
 }
 .bg__item:nth-of-type(4) {
   background: url("../img/reviews/dirt2.png") center;
   background-size: contain;
-  width: 228px;
+  width: 224px;
   height: 601px;
   position: absolute;
   bottom: -100px;
   right: 0;
+  z-index: ;
 }
 .btn--reviews {
   padding: 13px 13px;
@@ -1059,6 +1061,7 @@ input:-webkit-autofill {
 .gallery {
   max-width: 894px;
   position: relative;
+  z-index: 2;
   margin: 0 auto;
 }
 .gallery__item {
@@ -1130,4 +1133,23 @@ input:-webkit-autofill {
 }
 .slick-dots li.slick-active::after {
   background: #43b819;
+}
+.easy {
+  background: url("../img/easy/bg.jpg") center no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 1000px;
+  position: relative;
+  z-index: 0;
+}
+.easy__title {
+  font-family: "Days", sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: absolute;
+  top: 160px;
+  left: 50%;
+  transform: translateX(-50%);
 }
