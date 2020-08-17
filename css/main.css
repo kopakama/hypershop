@@ -1045,7 +1045,7 @@ input:-webkit-autofill {
   position: absolute;
   bottom: -100px;
   right: 0;
-  z-index: ;
+  z-index: 1;
 }
 .btn--reviews {
   padding: 13px 13px;
@@ -1060,6 +1060,7 @@ input:-webkit-autofill {
 }
 .gallery {
   max-width: 894px;
+  max-height: 522px;
   position: relative;
   z-index: 2;
   margin: 0 auto;
@@ -1067,6 +1068,16 @@ input:-webkit-autofill {
 .gallery__item {
   outline: none;
   height: 522px;
+}
+.gallery--photo.slick-slider {
+  display: none;
+}
+.gallery--video {
+  max-height: 367px;
+  max-width: 1020px;
+}
+.gallery--video img {
+  border-radius: 2%;
 }
 .slick-arrow {
   font-size: 0;
@@ -1076,7 +1087,7 @@ input:-webkit-autofill {
   outline: 0;
   color: transparent;
   position: absolute;
-  top: 36%;
+  top: 50%;
   cursor: pointer;
 }
 .slick-arrow::after {
@@ -1098,11 +1109,12 @@ input:-webkit-autofill {
 }
 .slick-dots {
   width: 130px;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 150px;
+  bottom: -63px;
   left: 50%;
   transform: translateX(-50%);
 }
