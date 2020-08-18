@@ -154,6 +154,7 @@ img {
   border: none;
   outline: none;
   box-shadow: 0 0 18px 3px #0e9b11;
+  transition: 0.2s;
   cursor: pointer;
 }
 .btn:hover {
@@ -1076,8 +1077,10 @@ input:-webkit-autofill {
   max-height: 367px;
   max-width: 1020px;
 }
-.gallery--video img {
+.gallery--video .gallery__img {
+  border: none;
   border-radius: 2%;
+  box-shadow: 15px 23px 17px -6px rgba(21, 22, 21, 0.22);
 }
 .slick-arrow {
   font-size: 0;
@@ -1174,7 +1177,7 @@ input:-webkit-autofill {
   margin-top: 45px;
 }
 .easy-cards__item {
-  width: 249px;
+  width: 239px;
   height: 297px;
   box-shadow: 0 0 26px 1px rgba(21, 22, 21, 0.22);
   background-image: linear-gradient(to top, #227e10 0%, #7a741b 100%);
@@ -1185,17 +1188,45 @@ input:-webkit-autofill {
 }
 .easy-cards__item::after {
   content: "";
-  width: 255px;
+  width: 245px;
   height: 297px;
   box-shadow: 0 0 26px 1px rgba(21, 22, 21, 0.22);
   background-image: linear-gradient(to top, #2b6a18 0%, #b5b717 100%);
   transform: skewX(-5deg);
   border-radius: 5%;
   position: absolute;
-  bottom: 5px;
+  bottom: 7px;
   left: 50%;
   transform: translateX(-50%);
   z-index: -1;
+}
+.easy-cards__item::before {
+  content: "1";
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 3px;
+  width: 40px;
+  height: 40px;
+  box-shadow: inset 4px 2px 0 rgba(57, 190, 22, 0.35);
+  background-image: linear-gradient(to bottom, #49cc1b 0%, #245b10 100%);
+  border-radius: 50%;
+  transform: skewX(5deg);
+  position: absolute;
+  top: -18px;
+  left: -18px;
+}
+.easy-cards__item:nth-child(2)::before {
+  content: "2";
+}
+.easy-cards__item:nth-child(3)::before {
+  content: "3";
+}
+.easy-cards__item:last-child::before {
+  content: "4";
+}
+.easy-cards__item:last-child .easy-cards__arrow {
+  display: none;
 }
 .easy-cards__content {
   display: flex;
@@ -1203,21 +1234,52 @@ input:-webkit-autofill {
   flex-direction: column;
   align-items: center;
   margin-top: 12px;
+  transform: skewX(5deg);
+}
+.easy-cards__arrow {
+  width: 38px;
+  height: 27px;
+  display: block;
+  background: url("../img/easy/right-arrow.png");
+  background-size: contain;
+  position: absolute;
+  top: 143px;
+  right: -54px;
 }
 .easy-cards__title {
-  max-width: 128px;
+  max-width: 210px;
   color: #f8f7f7;
   font-family: "Days", sans-serif;
   font-size: 15px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
+  line-height: 18px;
   margin-bottom: 5px;
 }
 .easy-cards__text {
-  max-width: 179px;
+  max-width: 190px;
   color: #f3f1f7;
   font-size: 12px;
   font-weight: bold;
   text-align: center;
+}
+.easy-cards__img {
+  left: 50%;
+  transform: skewX(5deg) translateX(-50%);
+  position: absolute;
+  bottom: 7px;
+}
+.easy-cards__item:nth-child(3) .easy-cards__img {
+  bottom: 23px;
+}
+.easy-cards__item:nth-child(4) .easy-cards__img {
+  bottom: 36px;
+}
+.easy .btn {
+  max-width: 492px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 169px;
 }
