@@ -337,16 +337,16 @@
               </div>
               <!-- /.form__color -->
 
-              <div class="form__text">
-                <div class="form__text__item">
+              <div class="form-text">
+                <div class="form-text__item">
                   Заполните форму, чтобы оформить заказ
                 </div>
-                <div class="form__text__item">
+                <div class="form-text__item">
                   После отправки заявки с Вами свяжется менеджер для уточнения
                   деталей доставки
                 </div>
               </div>
-              <!-- /.form__text -->
+              <!-- /.form-text -->
 
               <label for="name" class="label__input">
                 Введите Ваше имя
@@ -617,7 +617,62 @@
               </div>
             </div>
           </div>
-          <div class="questions__item">2</div>
+          <div class="questions__item">
+            <form action="#" class="order">
+              
+              <div class="form-text">
+                <div class="form__title">
+                  Есть дополнительные 
+                  вопросы?
+                </div>
+                <div class="form-text__item">
+                  Оставьте свои контакты, мы перезвоним
+                </div>
+              </div>
+              <!-- /.form-text -->
+
+              <label for="name" class="label__input">
+                Введите Ваше имя
+              </label>
+              <br />
+              <input
+                type="text"
+                name="name"
+                class="input"
+                id="name"
+                placeholder="Ваше имя"
+                required
+              />
+
+              <label for="phone" class="label__input"
+                >Введите контактный телефон</label
+              >
+              <br />
+              <input
+                type="text"
+                name="phone"
+                id="phone2"
+                class="input"
+                required
+              />
+
+              <input type="submit" class="btn submit--btn" value="оформить заказ">
+                
+
+              <div class="agree__form">
+                <input type="checkbox" name="name" id="agree" />
+                <label class="agree__label" for="agree">Я принимаю условия передачи данных</label>
+              </div>
+            </form>
+
+            <div class="contacts">
+              <a href="#" class="contacts__viber"
+                ><img src="img/viber.png" alt="viber"
+              /></a>
+              <a href="#" class="contacts__whatsapp"
+                ><img src="img/whatsapp.png" alt="whatsapp"
+              /></a>
+          </div>
         </div> <!-- /.questions__inner -->
       </div> <!-- /.container -->
     </section>
