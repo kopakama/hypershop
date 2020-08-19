@@ -1,12 +1,63 @@
 // main: main.less
 
 //Questions
+.questions{
+    position: relative;
+
+    .bg__item:first-child{
+        background: url("../img/reviews/dirt1.png") center;
+        background-size: contain;
+        width: 228px;
+        height: 601px;
+    
+        position: absolute;
+        top: -140px;
+        left: -18px;
+    }
+    
+    .bg__item:nth-of-type(2){
+        background: url("../img/reviews/roll1.png") center;
+        background-size: contain;
+        width: 623px;
+        height: 470px;
+
+        position: absolute;
+        top: -220px;
+        right: -154px;
+    }
+    
+    .bg__item:nth-of-type(3){
+        background: url("../img/reviews/roll2.png") center;
+        background-size: contain;
+    
+        width: 521px;
+        height: 431px;
+        position: absolute;
+        bottom: -263px;
+        left: -105px;
+
+    }
+    
+    .bg__item:nth-of-type(4){
+        background: url("../img/reviews/dirt2.png") center;
+        background-size: contain;
+        width: 224px;
+        height: 601px;
+    
+        position: absolute;
+        bottom: -180px;
+        right: 0;
+        
+        z-index: 1;
+    }
+}
+
 .questions__inner{
     display: flex;
     justify-content: space-between;
 }
 .questions__item{
-    width: 47%;
+    width: 46%;
 
     &:first-child{
         padding-top: 74px;
@@ -41,6 +92,7 @@
             color: #262525;
             font-size: 30px;
             letter-spacing: 0.05px;
+            margin-bottom: 10px;
         }
 
         .form-text__item{
@@ -64,7 +116,7 @@
         .contacts{
             margin: 0 auto 42px;
             padding-top: 18px;
-            padding-bottom: 29px;
+            padding-bottom: 35px;
 
             max-width: 100%;
             width: 100%;
@@ -96,6 +148,7 @@
 
         .order{
             margin-bottom: 0;
+            padding-top: 45px;
         }
 
         .submit--btn{
