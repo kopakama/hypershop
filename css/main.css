@@ -372,7 +372,7 @@ img {
   max-width: 18%;
   top: -4%;
   right: -11%;
-  animation: moveYU 2s infinite alternate;
+  animation: moveYU 2.5s infinite alternate;
 }
 .pic__item:nth-child(2) img {
   max-width: 18%;
@@ -385,14 +385,12 @@ img {
   top: -64%;
   left: -30%;
   z-index: -1;
-  animation: moveXL 2s infinite alternate;
 }
 .pic__item:nth-child(4) img {
   max-width: 70%;
   bottom: -61%;
   right: -31%;
   z-index: -1;
-  animation: moveXR 2s infinite alternate;
 }
 .abilities {
   position: relative;
@@ -1087,7 +1085,7 @@ input:-webkit-autofill {
   outline: none;
   height: 522px;
 }
-.gallery--photo.slick-slider {
+.gallery--video.slick-slider {
   display: none;
 }
 .gallery--video {
