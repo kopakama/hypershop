@@ -727,8 +727,10 @@ img {
   border-radius: 10px;
   border: 3px solid #40af19;
   max-width: 550px;
-  height: 742px;
-  padding: 47px 38px;
+  height: fit-content;
+}
+.order {
+  padding: 30px 38px 12px;
 }
 .buy-car__photos {
   display: flex;
@@ -1304,12 +1306,15 @@ input:-webkit-autofill {
   letter-spacing: 0.18px;
   margin-bottom: 30px;
 }
-.questions__item:last-child {
-  border-radius: 10px;
+.questions__item .questions-item__inner {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   border: 3px solid #40af19;
+  border-bottom: none;
+}
+.questions__item:last-child {
   max-width: 550px;
   height: fit-content;
-  padding: 47px 38px 0;
   color: #262525;
 }
 .questions__item:last-child .form__title {
@@ -1326,12 +1331,40 @@ input:-webkit-autofill {
   background-color: #dadada;
   color: #000;
 }
-.questions__item:last-child .contacts {
-  margin: 0 auto;
+.questions__item:last-child .contacts__inner {
+  display: flex;
   justify-content: center;
+  max-width: 81px;
+}
+.questions__item:last-child .contacts {
+  margin: 0 auto 42px;
+  padding-top: 18px;
+  padding-bottom: 29px;
+  max-width: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 3px solid #40af19;
+  border-top: 1px solid #dadada;
 }
 .questions__item:last-child .contacts .contacts__viber {
   margin-right: 13px;
+}
+.questions__item:last-child .contacts-text {
+  color: #262525;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.questions__item:last-child .order {
+  margin-bottom: 0;
+}
+.questions__item:last-child .submit--btn {
+  margin-bottom: 19px;
 }
 /* Accordion */
 .accordion {
