@@ -372,23 +372,27 @@ img {
   max-width: 18%;
   top: -4%;
   right: -11%;
+  animation: moveYU 2s infinite alternate;
 }
 .pic__item:nth-child(2) img {
   max-width: 18%;
   bottom: -13%;
   left: 4%;
+  animation: moveYD 2s infinite alternate;
 }
 .pic__item:nth-child(3) img {
   max-width: 68%;
   top: -64%;
   left: -30%;
   z-index: -1;
+  animation: moveXL 2s infinite alternate;
 }
 .pic__item:nth-child(4) img {
   max-width: 70%;
   bottom: -61%;
   right: -31%;
   z-index: -1;
+  animation: moveXR 2s infinite alternate;
 }
 .abilities {
   position: relative;
@@ -417,6 +421,9 @@ img {
   left: 50%;
   transform: translate3d(-50%, -76%, 0);
 }
+.abilities__img {
+  animation: moveXR 2s infinite alternate;
+}
 .abilities__photo::after {
   content: "";
   background-image: url("../img/car-shadow.png");
@@ -426,6 +433,7 @@ img {
   bottom: -193px;
   right: -39px;
   z-index: -1;
+  animation: moveXR 2s infinite alternate;
 }
 .cards {
   display: flex;
@@ -543,6 +551,7 @@ img {
   position: absolute;
   bottom: 211px;
   left: 131px;
+  animation: rotate 15s infinite linear;
 }
 .specs__img {
   width: 993px;
@@ -604,6 +613,7 @@ img {
   top: -38%;
   left: -15%;
   z-index: -1;
+  animation: moveXL 2s infinite alternate;
 }
 .complect__photo .dirt2 {
   width: 76%;
@@ -612,6 +622,7 @@ img {
   top: -8%;
   left: 51%;
   z-index: -1;
+  animation: moveXR 2s infinite alternate;
 }
 .complect__photo .stick1 {
   position: absolute;
@@ -619,6 +630,7 @@ img {
   height: auto;
   top: 10%;
   right: -6%;
+  animation: moveYU 2s infinite alternate;
 }
 .complect__photo .stick2 {
   position: absolute;
@@ -626,6 +638,7 @@ img {
   width: 15%;
   bottom: -4%;
   left: 30%;
+  animation: moveXL 2s infinite alternate;
 }
 .complect__img {
   max-width: 100%;
@@ -746,12 +759,14 @@ img {
   position: absolute;
   bottom: 0;
   left: 0;
+  animation: moveXR 2s infinite alternate;
 }
 .buy-car__rock {
   width: 4%;
   position: absolute;
   bottom: 17%;
   right: 5%;
+  animation: moveXL 2s infinite alternate;
 }
 .payship {
   display: flex;
@@ -939,18 +954,21 @@ input:-webkit-autofill {
   position: absolute;
   bottom: 0%;
   right: 80%;
+  animation: moveXR 2s infinite alternate;
 }
 .gift__stick2 {
   width: 17%;
   position: absolute;
   bottom: 43%;
   right: -9%;
+  animation: moveYU 2s infinite alternate;
 }
 .gift__rock {
   width: 9%;
   position: absolute;
   bottom: 18%;
   right: 87%;
+  animation: moveYD 2s infinite alternate;
 }
 .gift__inner {
   display: flex;
@@ -1499,4 +1517,44 @@ input:-webkit-autofill {
   position: absolute;
   bottom: 40px;
   right: 34px;
+}
+@keyframes moveXL {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+@keyframes moveXR {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+@keyframes moveYD {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+@keyframes moveYU {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
