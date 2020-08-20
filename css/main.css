@@ -549,6 +549,7 @@ img {
   position: absolute;
   bottom: 211px;
   left: 131px;
+  z-index: 1;
   animation: rotate 15s infinite linear;
 }
 .specs__img {
