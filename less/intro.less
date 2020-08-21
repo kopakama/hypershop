@@ -92,7 +92,6 @@
 }
 
 .features__item:last-child::before{
-    height: 59px;
     background: url("../img/intro/giftbox.png");
 }
 
@@ -155,3 +154,91 @@
     font-weight: bold;
     line-height: 1;
 }
+
+
+@media(max-width: 1230px){
+
+    .intro__img{
+        right: -200px;
+        bottom: -100px;
+    }
+    
+}
+
+@media (max-width: 990px){
+    .intro{
+        height: 1290px;
+    }
+    .intro__inner{
+        
+        align-items: center;
+        
+
+    }
+
+    .intro__img{
+        position: static;
+    }
+
+    .intro__title{
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 770px){ 
+    .intro__title{
+        font-size: 50px;
+        line-height: 49.93px;
+    }
+
+    .features__text{
+        font-size: 13px;
+    }
+
+    
+
+    
+}
+
+@media (max-width: 575px){
+    .intro__title{
+        font-size: 40px;
+        line-height: 39.93px;
+    }
+
+    
+}
+
+@media (max-width: 420px){
+    .logo__text{
+        display: none;
+    }
+
+    .intro__title{
+        font-size: 30px;
+        line-height: 29.93px;
+    }
+
+    .features__item::before{
+        top: -10px;
+        left: 30px;
+        width: 39px;
+        height: 40px;
+
+    }
+
+    .features__item:first-child::before {
+        background: url("../img/intro/suspension_small.png");
+    }
+
+    .features__item:nth-child(2)::before {
+        background: url("../img/intro/icon_small.png");
+    }
+
+    .features__item:nth-child(3)::before {
+        background: url("../img/intro/giftbox_small.png");
+    }
+
+}
+

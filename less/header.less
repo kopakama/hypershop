@@ -19,8 +19,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 22px;
-    margin-right: 35px;
+    padding-left: 22px;
+    padding-right: 35px;
 }
 
 // nav
@@ -61,8 +61,8 @@
     background: none;
 
     position: absolute;
-    top: 25px;
-    right: 42px;
+    top: 16px;
+    right: 9px;
     z-index: 1;
 
     cursor: pointer;
@@ -161,6 +161,13 @@
     margin-left: 15px;
 }
 
+.logo__img{
+    width: 70%;
+    max-width: 133px;
+    min-width: 98px;
+    height: auto;
+}
+
 //contacts
 
 .contacts{
@@ -170,6 +177,8 @@
     max-width: 291px;
     justify-content: space-between;
     align-items: center;
+
+    position: relative;
 
 
     
@@ -239,4 +248,111 @@
     display: block;
     font-size: 10px;
     text-transform: uppercase;
+}
+
+//media
+@media(max-width: 1230px){
+    /* Nav */
+    .nav{
+       display: none;
+       width: 100%;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        background-color: #ed8d8b;
+
+   }
+
+   .nav.active{
+       display: block;
+   }
+
+   .nav-toggle{
+       display: block;
+   }
+
+   .nav__link{
+       display: block;
+
+       margin: 0;
+       padding: 8px 20px;
+   }
+
+   //logo
+   .logo{
+       width: 70%;
+   }
+
+   //contacts
+   .phone{
+       display: none;
+   }
+
+   .contacts{
+       justify-content: flex-end;
+
+       min-width: 0;
+       padding-right: 40px;
+   }
+
+   .contacts__viber{
+       margin-right: 7px;
+   }
+
+   
+
+}
+
+@media (max-width: 990px){
+
+}
+
+@media (max-width: 770px){ 
+    .header__inner{
+        padding: 0 13px;
+    }
+
+
+    
+}
+
+@media (max-width: 575px){
+    .logo__text{
+        font-size: 8px;
+        letter-spacing: 0.82px;
+        line-height: 12px;
+    }
+
+    .contacts{
+        .contacts__viber{
+            width: 31px;
+            height: 31px;
+
+            img{
+                width: 15px;
+                height: 17px;
+            }
+        }
+
+        .contacts__whatsapp{
+            width: 31px;
+            height: 31px;
+
+            img{
+                width: 19px;
+                height: 20px;
+            }
+        }
+    } 
+    
+    .nav-toggle::before {
+        width: 31px; 
+        height: 31px;
+    }
+
+    .nav-toggle{
+        top: 14px;
+    }
 }
