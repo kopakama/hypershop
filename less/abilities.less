@@ -132,7 +132,7 @@
     font-weight: bold;
     text-align: center;
 
-    margin: 6px 0 13px;
+    margin: 6px auto 13px;
 }
 
 .card__text--db{
@@ -143,6 +143,7 @@
     display: flex;
     width: 100%;
     justify-content: flex-end;
+    flex-wrap: wrap;
     align-items: center;
     margin-top: 46px;
 }
@@ -168,5 +169,152 @@
     padding: 20px 79px;
     z-index: 1000;
 }
+
+@media(max-width: 1170px){
+    .abilities{
+        margin-top: -130px;
+    }
+    
+    .cards {
+        padding-top: 500px;
+        max-width: 620px;
+        margin: 0 auto;
+    }
+
+    .abilities__img{
+        margin-top: -600px;
+    }
+
+    .abilities{
+        .buy{
+            flex-direction: column;
+        }
+
+        .buy--abilities {
+            margin-left: 25px;
+        }
+    }
+
+    .abilities__photo::after {
+        bottom: 0;
+    }
+}
+
+@media (max-width: 650px){
+    .abilities{
+        .buy{
+            flex-direction: row;
+        }
+    }
+
+    .abilities__img{
+        margin-top: -874px;
+        width: 600px;
+    }
+
+    .abilities__photo::after {
+        bottom: 300px;
+    }
+
+    .abilities__title{
+        font-size: 90px;
+    }
+
+    .cards{
+        padding-top: 533px;
+    }
+
+    .card__item{
+        width: 100%;
+        margin-top: 24px;
+
+        &::before{
+            width: 100%;
+        }
+    }
+
+    .card__text{
+        width: 90%;
+    }
+
+    .flex__bottom{
+        margin-top: 0;
+        justify-content: center;
+    }
+
+    .btn--abilties{
+        .btn
+    }
+
+    .price{
+        margin-left: 20px;
+    }
+
+}
+
+@media (max-width: 990px){
+
+}
+
+@media (max-width: 770px){ 
+
+}
+
+@media (max-width: 575px){
+    .cards{
+        padding-top: 419px;
+    }
+
+    .abilities__img{
+        margin-top: -852px;
+        width: 490px;
+    }
+
+    .abilities__title{
+        font-size: 70px;
+        line-height: .85;
+    }
+
+
+}
+
+@media (max-width: 420px){
+
+    .btn--abilties{
+        padding: 15px 35px;
+        font-size: 18px;
+    }
+
+    .abilities__title{
+        font-size: 61px;
+    }
+
+    .cards{
+        padding-top: 322px;
+    }
+
+    .abilities__img{
+        margin-top: -800px;
+        width: 402px;
+    }
+
+}
+
+@media (max-width: 380px){
+    .abilities__title{
+        font-size: 51px;
+    }
+
+    .abilities__img{
+        margin-top: -800px;
+        width: 350px;
+    }
+
+    .cards{
+        padding-top: 290px;
+    }
+
+}
+
 
 
