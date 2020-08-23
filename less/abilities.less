@@ -52,6 +52,7 @@
 
         z-index: -1;
 
+
         animation: moveXR 2s infinite alternate;
 }
 
@@ -176,13 +177,13 @@
     }
     
     .cards {
-        padding-top: 500px;
+        padding-top: 504px;
         max-width: 620px;
         margin: 0 auto;
     }
 
     .abilities__img{
-        margin-top: -600px;
+        margin-top: -675px;
     }
 
     .abilities{
@@ -191,14 +192,22 @@
         }
 
         .buy--abilities {
-            margin-left: 25px;
+            margin-left: 0;
         }
     }
 
     .abilities__photo::after {
-        bottom: 0;
+        bottom: 100;
+    }
+
+    .flex__bottom{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
     }
 }
+
 
 @media (max-width: 650px){
     .abilities{
