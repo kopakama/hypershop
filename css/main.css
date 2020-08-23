@@ -953,7 +953,7 @@ img {
   background: url("../img/about/bg.jpg") center no-repeat;
   background-size: cover;
   max-width: 100%;
-  min-height: 1080px;
+  min-height: 834px;
   margin: 77px 0;
   position: relative;
 }
@@ -1037,7 +1037,15 @@ img {
   margin-top: 20px;
   max-width: 234px;
 }
+@media (max-width: 1230px) {
+  .specs__img {
+    width: 843px;
+  }
+}
 @media (max-width: 900px) {
+  .about {
+    min-height: 1080px;
+  }
   .about__title {
     font-size: 60px;
     position: static;
@@ -1079,8 +1087,14 @@ img {
   .specs__item {
     font-size: 8px;
   }
+  .about {
+    min-height: 941px;
+  }
 }
 @media (max-width: 630px) {
+  .about {
+    min-height: 900px;
+  }
   .specs__img {
     width: 700px;
   }
@@ -1092,15 +1106,43 @@ img {
   }
 }
 @media (max-width: 540px) {
+  .about {
+    min-height: 700px;
+  }
   .about__title {
-    font-size: 30px;
+    font-size: 23px;
   }
   .specs__item {
     font-size: 6px;
     width: 200px;
+    margin-right: 20px;
   }
   .specs__img {
-    width: 500px;
+    width: 575px;
+  }
+  .specs__photo {
+    margin-right: -50px;
+  }
+  .hour1 {
+    bottom: 115px;
+    left: 84px;
+  }
+}
+@media (max-width: 420px) {
+  .about {
+    min-height: 600px;
+  }
+  .specs {
+    font-size: 5px;
+  }
+  .specs__text {
+    max-width: 193px;
+  }
+  .specs__img {
+    width: 434px;
+  }
+  .specs__photo {
+    margin-right: -44px;
   }
 }
 .complect {
@@ -1160,8 +1202,10 @@ img {
 .blocks {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 50px;
   margin-top: 45px;
+  padding: 0 10px;
 }
 .blocks__item {
   width: 220px;
@@ -1170,8 +1214,13 @@ img {
   background-image: linear-gradient(to top, #227e10 0%, #7a741b 100%);
   transform: skewX(-5deg);
   border-radius: 5%;
+  margin-right: 20px;
+  margin-top: 24px;
   position: relative;
   z-index: 1;
+}
+.blocks__item:last-child {
+  margin-right: 0;
 }
 .blocks__item::after {
   content: "";
@@ -1216,6 +1265,29 @@ img {
 }
 .blocks__item:nth-child(3) .blocks__img {
   top: 5px;
+}
+@media (max-width: 979px) {
+  .complect__photo {
+    margin-right: 5px;
+  }
+  .blocks {
+    justify-content: center;
+  }
+}
+@media (max-width: 770px) {
+  .complect__photo {
+    margin-top: 109px;
+  }
+}
+@media (max-width: 575px) {
+  .complect__photo {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 420px) {
+  .complect__photo {
+    margin-top: -20px;
+  }
 }
 .buy-car {
   background: url("../img/buy-car/bg.jpg") center no-repeat;

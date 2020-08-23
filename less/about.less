@@ -7,7 +7,7 @@
     background-size: cover;
 
     max-width: 100%;
-    min-height: 1080px;
+    min-height: 834px;
 
     margin: 77px 0;
 
@@ -110,10 +110,16 @@
 }
 
 @media(max-width: 1230px){
+    .specs__img {
+        width: 843px;
+    }
     
 }
 
 @media (max-width: 900px){
+    .about{
+        min-height: 1080px;
+    }
     .about__title{
         font-size: 60px;
         position: static;
@@ -166,10 +172,18 @@
         font-size: 8px;
     }
 
+    .about{
+        min-height: 941px;
+    }
+
 
 }
 
 @media (max-width: 630px){
+    .about{
+        min-height: 900px;
+    }
+
     .specs__img{
         width: 700px;
     }
@@ -186,22 +200,55 @@
 
 
 @media (max-width: 540px){
+    .about{
+        min-height: 700px;
+    }
+
     .about__title{
-        font-size: 30px;
+        font-size: 23px;
     }
 
     .specs__item{
         font-size: 6px;
         width: 200px;
+        margin-right: 20px;
     }
 
     .specs__img{
-        width: 500px;
+        width: 575px;
+    }
+
+    .specs__photo{
+        margin-right: -50px;
+    }
+
+    .hour1 {
+        bottom: 115px;
+        left: 84px;
     }
 
 
 }
 
 @media (max-width: 420px){
+    .about{
+        min-height: 600px;
+    }
+
+    .specs{
+        font-size: 5px;
+    }
+    
+    .specs__text{
+        max-width: 193px;
+    }
+
+    .specs__img{
+        width: 434px;
+    }
+
+    .specs__photo{
+        margin-right: -44px;
+    }
 
 }
