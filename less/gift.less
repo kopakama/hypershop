@@ -4,6 +4,8 @@
     position: relative;
     max-width: 722px;
     margin-left: -90px;
+
+    order: 1;
 }
 
 .gift__img{
@@ -39,6 +41,16 @@
     animation: moveYD 2s infinite alternate;
 }
 
+.gift__round{
+    width: 23%;
+    
+    position: absolute;
+    top: 2%;
+    left: 6%;
+
+    animation: rotate 15s infinite linear;
+}
+
 .gift__inner{
     display: flex;
     justify-content: center;
@@ -49,13 +61,14 @@
     order: -1;
     max-width: 100%;
     height: auto;
+    font-size: 10px;
 }
 
 .gift__title{
     max-width: 646px;;
     color: #262525;
     font-family: "Days", sans-serif;
-    font-size: 60px;
+    font-size: 6em;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1;
@@ -65,19 +78,83 @@
     }
 
     .middle{
-        font-size: 72px;
+        font-size: 1.2em;
         letter-spacing: 2.4px;
     }
 
     .big{
-        font-size: 110px;
+        font-size: 1.85em;
     }
 }
 
 .gift__text{
     max-width: 540px;
     color: #262525;
-    font-size: 20px;
+    font-size: 1.6em;
     font-weight: bold;
     line-height: 1.2;
+}
+
+@media(max-width: 1230px){
+    
+}
+
+@media (max-width: 990px){
+    .gift__inner{
+        flex-wrap: wrap;
+    }
+
+    .gift__photo{
+        margin-left: -35px;
+        order: -1;
+    }
+
+    .gift__content{
+        text-align: center;
+        order: 1;
+    }
+
+    .gift__text{
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 770px){ 
+    .gift__content{
+        font-size: 8px;
+    }
+
+    .gift__text{
+        font-size: 2.5em;
+    }
+
+}
+
+@media (max-width: 575px){
+    .gift__content{
+        font-size: 7px;
+    }
+
+}
+
+@media (max-width: 470px){
+    .gift__content{
+        font-size: 6px;
+    }
+
+}
+
+@media (max-width: 420px){
+    .gift__content{
+        font-size: 5px;
+    }
+
+}
+
+@media (max-width: 350px){
+    .gift__content{
+        font-size: 4px;
+    }
+
 }

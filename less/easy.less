@@ -9,19 +9,41 @@
 
     position: relative;
     z-index: 0;
+
+    .slick-list{
+        overflow: visible !important;
+        transform: translate3d(0, 30%, 0) !important;
+    }
+
+    .slick-dots{
+        bottom: 324px;
+    }
+
+    .slick-arrow::after{
+        background: url("../img/easy/arrow-white.png") center no-repeat;
+    }
+
+    .submit--btn{
+        width: 86%;
+    }
 }
 
 .easy__title{
     font-family: "Days", sans-serif;
-    font-size: 45px;
+    font-size: 4.5rem;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 3px;
 
+    width: 100%;
+    text-align: center;
+
     position: absolute;
-    top: 160px;
     left: 50%;
     transform: translateX(-50%);
+    top: 160px;
+    z-index: 1;
+    
     }
 
     .easy-cards{
@@ -44,6 +66,8 @@
 
     position: relative;
     z-index: 1; 
+
+    margin: 0 auto;
 
     &::after{
         content: "";
@@ -82,15 +106,15 @@
         left: -18px;
     }
 
-    &:nth-child(2)::before{
+    &.card_2::before{
         content: "2";
     }
 
-    &:nth-child(3)::before{
+    &.card_3::before{
         content: "3";
     }
 
-    &:last-child::before{
+    &.card_4::before{
         content: "4";
     }
 
@@ -107,7 +131,7 @@
     flex-direction: column;
     align-items: center;
 
-    margin-top: 12px;
+    padding-top: 12px;
 
     transform: skewX(5deg);
 }
@@ -167,5 +191,25 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 169px;
+    bottom: 220px;
+}
+
+@media(max-width: 1230px){
+    
+}
+
+@media (max-width: 990px){
+
+}
+
+@media (max-width: 770px){ 
+
+}
+
+@media (max-width: 575px){
+
+}
+
+@media (max-width: 420px){
+
 }

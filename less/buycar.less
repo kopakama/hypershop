@@ -14,11 +14,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    font-size: 10px;
 }
 
 .buy-car__inner{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -42,14 +45,27 @@
     padding: 30px 38px 12px;
 }
 
-.buy-car__photos{
+.buy-car__row{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 
-    width: 571px;
-    height: 450px;
+
+    max-width: 571px;
+
+    &:last-of-type{
+        margin: 10px 0 25px;
+
+        .buy-car__img{
+            margin-right: 10px;
+            &:last-of-type{
+                margin-right: 0;
+            }
+        }
+
+    }
 }
+
+
 
 .buy-car__img img{
     max-width: 100%;
@@ -81,7 +97,7 @@
 
 .payship__item{
     color: #f3f1f7;
-    font-size: 11px;
+    font-size: 1.1rem;
     font-weight: bold;
     max-width: 272px;
 
@@ -119,7 +135,7 @@
 .form__title{
     color: #f9f9f9;
     font-family: "Days", sans-serif;
-    font-size: 30px;
+    font-size: 3rem;
     line-height: 1.2;
     font-weight: bold;
     text-transform: uppercase;
@@ -127,14 +143,14 @@
     margin: 0 auto;
 
     span{
-        font-size: 48px;
+        font-size: 4.8rem;
     }
 }
 
 .form__price{
     .old{
     color: #f9f9f9;
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: bold;
     text-decoration: line-through;
     }
@@ -147,7 +163,7 @@
         -webkit-text-fill-color: transparent;
         text-shadow: 0 0 21px rgba(14, 155, 17, 0.27);
         color: #f9f9f9;
-        font-size: 36px;
+        font-size: 3.6rem;
         font-weight: bold;
 
         margin-right: 20px;
@@ -160,7 +176,7 @@
 
 .form__color__text{
     display: inline-block;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: bold;
 }
 
@@ -220,20 +236,20 @@
 }
 
 .form-text__item:first-child{
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: bold;
 
     margin: 25px 0 10px;
 }
 
 .form-text__item:last-child{
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: bold;
 }
 
 .label__input{
     display: inline-block;
-    font-size: 10px;
+    font-size: 1rem;
     font-weight: bold;
 
     margin: 15px 0 13px;
@@ -246,7 +262,7 @@
     background: #050505;
 
     color: #ffffff;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: bold;
     border: 0;
     outline: none;
@@ -254,8 +270,12 @@
     padding: 18px 0 18px 23px;
 }
 
+.input:focus{
+    border: 1px solid #949f96;
+}
+
 .input::placeholder{
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 //фон автозаполнения
@@ -272,7 +292,7 @@ input:-webkit-autofill {
 
     margin: 19px 0 27px;
 
-    font-size: 28px;
+    font-size: 2.8rem;
     letter-spacing: 1.2;
 }
 
@@ -284,13 +304,64 @@ input:-webkit-autofill {
 
 .agree__label{
     display: inline-block;
-    font-size: 10px;
+    font-size: 1rem;
     font-weight: bold;
     line-height: 24px;
 
     margin-left: 5px;
 
     cursor: pointer;
+}
+
+@media(max-width: 1139px){
+    .buy-car{
+        height: 1650px;
+        margin: -100px 0 0;
+    }
+
+
+    .buy-car__inner{
+        justify-content: center;
+    }
+
+    .buy-car__item:first-of-type{
+        margin-bottom: 30px;
+    }
+
+    .buy-car__rock{
+        display: none;
+    }
+
+    .buy-car__stick{
+        display: none;
+    }
+
+    .order{
+        padding: 30px 20px 12px;
+    }
+
+}
+
+@media (max-width: 990px){
+
+}
+
+@media (max-width: 770px){ 
+
+}
+
+@media (max-width: 575px){
+    .buy-car{
+        height: 1450px;
+    }
+}
+
+@media (max-width: 420px){
+    .buy-car{
+        height: 1250px;
+    }
+
+
 }
 
 

@@ -4,6 +4,10 @@
   src: url("../fonts/Days.otf");
 }
 
+html{
+  font-size: 10px;
+}
+
 body {
   margin: 0;
   line-height: 1.6;
@@ -95,6 +99,8 @@ img {
   height: 175%;
 }
 
+
+
 @import "intro.less";
 @import "header.less";
 @import "video.less";
@@ -109,3 +115,24 @@ img {
 @import "footer.less";
 @import "keyframes.less";
 @import "media.less";
+
+@media(max-width: 1140px){
+  html{
+      font-size: 9px;
+  }
+}
+
+
+@media (max-width: 575px){
+  html{
+      font-size: 7px;
+  }
+
+}
+
+@media (max-width: 420px){
+  html{
+      font-size: 6px;
+  }
+
+}

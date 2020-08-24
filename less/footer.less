@@ -23,7 +23,7 @@
 
 .logo__politics{
     display: block;
-    font-size: 10px;
+    font-size: 1rem;
     color: #f5f5f6;
 
     margin-top: 5px;
@@ -44,7 +44,7 @@
 .devs{
     width: 112px;
 
-    font-size: 10px;
+    font-size: 1rem;
     font-weight: bold;
     line-height: 18px;
 
@@ -52,5 +52,62 @@
     bottom: 40px;
     right: 34px;
 
+
+}
+
+
+@media(max-width: 1130px){
+    .footer__car{
+        display: none;
+    }
+
+    .footer__logo{
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 990px){
+
+}
+
+@media (max-width: 770px){ 
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 110px;
+    }
+
+    .footer__logo{
+        position: static;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo__text{
+        text-align: center;
+        line-height: 1.8;
+        margin-bottom: 10px;
+    }
+
+    .logo__img{
+        margin-bottom: 25px;
+    }
+
+    .devs{
+        text-align: center;
+        position: static;
+        line-height: 1.7;
+    }
+
+}
+
+@media (max-width: 575px){
+
+}
+
+@media (max-width: 420px){
 
 }

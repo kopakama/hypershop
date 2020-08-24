@@ -24,7 +24,7 @@
 .reviews__title{
     color: #262525;
     font-family: "Days", sans-serif;
-    font-size: 48px;
+    font-size: 4.8rem;
     font-weight: bold;
     text-transform: uppercase;
 
@@ -50,7 +50,7 @@
     height: 470px;
 
     position: absolute;
-    top: -140px;
+    top: -70px;
     right: 0;
 }
 
@@ -101,17 +101,20 @@
 
 
 .gallery{
-    max-width: 894px;
     max-height: 522px;
     position: relative;
     z-index: 2;
 
-    margin: 0 auto;
+    padding: 0px 147px;
 }
 
 .gallery__item{
     outline: none;
     height: 522px;
+}
+
+.gallery__img{
+    margin: 0 auto;
 }
 
 //gallery--photo
@@ -159,13 +162,13 @@
 .slick-next{
     z-index: 1;
     transform: rotate(180deg) translateY(50%);
-    right: -107px;
+    right: 0px;
 }
 
 .slick-prev{
     z-index: 1;
     transform: translateY(-50%);
-    left: -138px;
+    left: 0px;
 }
 
 
@@ -221,4 +224,31 @@
     background: #43b819;
 }
 
+@media(max-width: 1230px){
+    .bg__item{
+        display: none;
+    }
+    
+}
 
+@media (max-width: 990px){
+
+}
+
+@media (max-width: 770px){ 
+
+}
+
+@media (max-width: 600px){
+    .gallery{
+        padding: 0 70px;
+    }
+
+}
+
+@media (max-width: 420px){
+    .gallery{
+        padding: 0 0;
+    }
+
+}
