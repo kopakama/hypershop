@@ -1854,6 +1854,11 @@ input:-webkit-autofill {
     display: none;
   }
 }
+@media (max-width: 770px) {
+  .reviews {
+    margin-top: 80px;
+  }
+}
 @media (max-width: 600px) {
   .gallery {
     padding: 0 70px;
