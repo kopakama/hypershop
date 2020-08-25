@@ -238,6 +238,7 @@ img {
   .intro__title {
     font-size: 30px;
     line-height: 29.93px;
+    letter-spacing: 2px;
   }
   .features {
     min-height: 110px;
@@ -947,6 +948,7 @@ img {
 @media (max-width: 380px) {
   .abilities__title {
     font-size: 51px;
+    letter-spacing: 3.5px;
   }
   .abilities__img {
     margin-top: -800px;
