@@ -96,7 +96,9 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   position: relative;
 }
 .intro__title {
@@ -119,7 +121,7 @@ img {
   min-height: 163px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   margin: 50px 0;
 }
 .features__text {
