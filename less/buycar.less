@@ -36,6 +36,8 @@
     border: 3px solid #40af19;
 
     max-width: 550px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
 
     
@@ -78,7 +80,8 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    animation: moveXR 2s infinite alternate;
+    -webkit-animation: moveXR 2s infinite alternate;
+            animation: moveXR 2s infinite alternate;
 }
 
 .buy-car__rock{
@@ -87,7 +90,8 @@
     position: absolute;
     bottom: 17%;
     right: 5%;
-    animation: moveXL 2s infinite alternate;
+    -webkit-animation: moveXL 2s infinite alternate;
+            animation: moveXL 2s infinite alternate;
 }
 
 .payship{
@@ -272,6 +276,22 @@
 
 .input:focus{
     border: 1px solid #949f96;
+}
+
+.input::-webkit-input-placeholder{
+    font-size: 1.4rem;
+}
+
+.input::-moz-placeholder{
+    font-size: 1.4rem;
+}
+
+.input:-ms-input-placeholder{
+    font-size: 1.4rem;
+}
+
+.input::-ms-input-placeholder{
+    font-size: 1.4rem;
 }
 
 .input::placeholder{

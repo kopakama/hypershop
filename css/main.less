@@ -484,13 +484,15 @@ img {
   max-width: 18%;
   top: -4%;
   right: -11%;
-  animation: moveYU 2.5s infinite alternate;
+  -webkit-animation: moveYU 2.5s infinite alternate;
+          animation: moveYU 2.5s infinite alternate;
 }
 .pic__item:nth-child(2) img {
   max-width: 18%;
   bottom: -13%;
   left: 4%;
-  animation: moveYD 2s infinite alternate;
+  -webkit-animation: moveYD 2s infinite alternate;
+          animation: moveYD 2s infinite alternate;
 }
 .pic__item:nth-child(3) img {
   max-width: 68%;
@@ -532,7 +534,8 @@ img {
   transform: translate3d(-50%, -76%, 0);
 }
 .abilities__img {
-  animation: moveXR 2s infinite alternate;
+  -webkit-animation: moveXR 2s infinite alternate;
+          animation: moveXR 2s infinite alternate;
 }
 .abilities__photo::after {
   content: "";
@@ -543,7 +546,8 @@ img {
   bottom: -193px;
   right: -39px;
   z-index: -1;
-  animation: moveXR 2s infinite alternate;
+  -webkit-animation: moveXR 2s infinite alternate;
+          animation: moveXR 2s infinite alternate;
 }
 .cards {
   display: flex;
@@ -662,7 +666,8 @@ img {
   bottom: 211px;
   left: 131px;
   z-index: 1;
-  animation: rotate 15s infinite linear;
+  -webkit-animation: rotate 15s infinite linear;
+          animation: rotate 15s infinite linear;
 }
 .specs__img {
   width: 993px;
@@ -724,7 +729,8 @@ img {
   top: -38%;
   left: -15%;
   z-index: -1;
-  animation: moveXL 2s infinite alternate;
+  -webkit-animation: moveXL 2s infinite alternate;
+          animation: moveXL 2s infinite alternate;
 }
 .complect__photo .dirt2 {
   width: 76%;
@@ -733,7 +739,8 @@ img {
   top: -8%;
   left: 51%;
   z-index: -1;
-  animation: moveXR 2s infinite alternate;
+  -webkit-animation: moveXR 2s infinite alternate;
+          animation: moveXR 2s infinite alternate;
 }
 .complect__photo .stick1 {
   position: absolute;
@@ -741,7 +748,8 @@ img {
   height: auto;
   top: 10%;
   right: -6%;
-  animation: moveYU 2s infinite alternate;
+  -webkit-animation: moveYU 2s infinite alternate;
+          animation: moveYU 2s infinite alternate;
 }
 .complect__photo .stick2 {
   position: absolute;
@@ -749,7 +757,8 @@ img {
   width: 15%;
   bottom: -4%;
   left: 30%;
-  animation: moveXL 2s infinite alternate;
+  -webkit-animation: moveXL 2s infinite alternate;
+          animation: moveXL 2s infinite alternate;
 }
 .complect__img {
   max-width: 100%;
@@ -849,6 +858,8 @@ img {
   border-radius: 10px;
   border: 3px solid #40af19;
   max-width: 550px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
 .order {
@@ -870,14 +881,16 @@ img {
   position: absolute;
   bottom: 0;
   left: 0;
-  animation: moveXR 2s infinite alternate;
+  -webkit-animation: moveXR 2s infinite alternate;
+          animation: moveXR 2s infinite alternate;
 }
 .buy-car__rock {
   width: 4%;
   position: absolute;
   bottom: 17%;
   right: 5%;
-  animation: moveXL 2s infinite alternate;
+  -webkit-animation: moveXL 2s infinite alternate;
+          animation: moveXL 2s infinite alternate;
 }
 .payship {
   display: flex;
@@ -1017,6 +1030,18 @@ img {
   outline: none;
   padding: 18px 0 18px 23px;
 }
+.input::-webkit-input-placeholder {
+  font-size: 14px;
+}
+.input::-moz-placeholder {
+  font-size: 14px;
+}
+.input:-ms-input-placeholder {
+  font-size: 14px;
+}
+.input::-ms-input-placeholder {
+  font-size: 14px;
+}
 .input::placeholder {
   font-size: 14px;
 }
@@ -1065,21 +1090,24 @@ input:-webkit-autofill {
   position: absolute;
   bottom: 0%;
   right: 80%;
-  animation: moveXR 2s infinite alternate;
+  -webkit-animation: moveXR 2s infinite alternate;
+          animation: moveXR 2s infinite alternate;
 }
 .gift__stick2 {
   width: 17%;
   position: absolute;
   bottom: 43%;
   right: -9%;
-  animation: moveYU 2s infinite alternate;
+  -webkit-animation: moveYU 2s infinite alternate;
+          animation: moveYU 2s infinite alternate;
 }
 .gift__rock {
   width: 9%;
   position: absolute;
   bottom: 18%;
   right: 87%;
-  animation: moveYD 2s infinite alternate;
+  -webkit-animation: moveYD 2s infinite alternate;
+          animation: moveYD 2s infinite alternate;
 }
 .gift__inner {
   display: flex;
@@ -1480,6 +1508,8 @@ input:-webkit-autofill {
 }
 .questions__item:last-child {
   max-width: 550px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   color: #262525;
 }
@@ -1629,12 +1659,28 @@ input:-webkit-autofill {
   bottom: 40px;
   right: 34px;
 }
+@-webkit-keyframes moveXL {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
 @keyframes moveXL {
   0% {
     transform: translateX(0);
   }
   100% {
     transform: translateX(10px);
+  }
+}
+@-webkit-keyframes moveXR {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-10px);
   }
 }
 @keyframes moveXR {
@@ -1645,6 +1691,14 @@ input:-webkit-autofill {
     transform: translateX(-10px);
   }
 }
+@-webkit-keyframes moveYD {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
 @keyframes moveYD {
   0% {
     transform: translateY(0);
@@ -1653,12 +1707,28 @@ input:-webkit-autofill {
     transform: translateY(10px);
   }
 }
+@-webkit-keyframes moveYU {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
 @keyframes moveYU {
   0% {
     transform: translateY(0);
   }
   100% {
     transform: translateY(-10px);
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 @keyframes rotate {
