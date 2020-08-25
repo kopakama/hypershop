@@ -631,14 +631,12 @@ img {
   max-width: 18%;
   top: -4%;
   right: -11%;
-  -webkit-animation: moveYU 2.5s infinite alternate;
   animation: moveYU 2.5s infinite alternate;
 }
 .pic__item:nth-child(2) img {
   max-width: 18%;
   bottom: -13%;
   left: 4%;
-  -webkit-animation: moveYD 2s infinite alternate;
   animation: moveYD 2s infinite alternate;
 }
 .pic__item:nth-child(3) img {
@@ -736,7 +734,6 @@ img {
   transform: translate3d(-50%, -76%, 0);
 }
 .abilities__img {
-  -webkit-animation: moveXR 2s infinite alternate;
   animation: moveXR 2s infinite alternate;
 }
 .abilities__photo::after {
@@ -748,7 +745,6 @@ img {
   bottom: -193px;
   right: -39px;
   z-index: -1;
-  -webkit-animation: moveXR 2s infinite alternate;
   animation: moveXR 2s infinite alternate;
 }
 .cards {
@@ -995,7 +991,6 @@ img {
   bottom: 211px;
   left: 131px;
   z-index: 1;
-  -webkit-animation: rotate 15s infinite linear;
   animation: rotate 15s infinite linear;
 }
 .specs__img {
@@ -1141,6 +1136,9 @@ img {
   .about {
     min-height: 600px;
   }
+  .about__title {
+    font-size: 21px;
+  }
   .specs {
     font-size: 5px;
   }
@@ -1184,7 +1182,6 @@ img {
   height: auto;
   top: 10%;
   right: -6%;
-  -webkit-animation: moveYU 2s infinite alternate;
   animation: moveYU 2s infinite alternate;
 }
 .complect__photo .stick2 {
@@ -1193,7 +1190,6 @@ img {
   width: 15%;
   bottom: -4%;
   left: 30%;
-  -webkit-animation: moveXL 2s infinite alternate;
   animation: moveXL 2s infinite alternate;
 }
 .complect__img {
@@ -1362,7 +1358,6 @@ img {
   position: absolute;
   bottom: 0;
   left: 0;
-  -webkit-animation: moveXR 2s infinite alternate;
   animation: moveXR 2s infinite alternate;
 }
 .buy-car__rock {
@@ -1370,7 +1365,6 @@ img {
   position: absolute;
   bottom: 17%;
   right: 5%;
-  -webkit-animation: moveXL 2s infinite alternate;
   animation: moveXL 2s infinite alternate;
 }
 .payship {
@@ -1514,12 +1508,6 @@ img {
 .input:focus {
   border: 1px solid #949f96;
 }
-.input::-webkit-input-placeholder {
-  font-size: 1.4rem;
-}
-.input::-moz-placeholder {
-  font-size: 1.4rem;
-}
 .input:-ms-input-placeholder {
   font-size: 1.4rem;
 }
@@ -1606,7 +1594,6 @@ input:-webkit-autofill {
   position: absolute;
   bottom: 0%;
   right: 80%;
-  -webkit-animation: moveXR 2s infinite alternate;
   animation: moveXR 2s infinite alternate;
 }
 .gift__stick2 {
@@ -1614,7 +1601,6 @@ input:-webkit-autofill {
   position: absolute;
   bottom: 43%;
   right: -9%;
-  -webkit-animation: moveYU 2s infinite alternate;
   animation: moveYU 2s infinite alternate;
 }
 .gift__rock {
@@ -1622,7 +1608,6 @@ input:-webkit-autofill {
   position: absolute;
   bottom: 18%;
   right: 87%;
-  -webkit-animation: moveYD 2s infinite alternate;
   animation: moveYD 2s infinite alternate;
 }
 .gift__round {
@@ -1630,7 +1615,6 @@ input:-webkit-autofill {
   position: absolute;
   top: 2%;
   left: 6%;
-  -webkit-animation: rotate 15s infinite linear;
   animation: rotate 15s infinite linear;
 }
 .gift__inner {
@@ -2332,28 +2316,12 @@ input:-webkit-autofill {
     line-height: 1.7;
   }
 }
-@-webkit-keyframes moveXL {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(10px);
-  }
-}
 @keyframes moveXL {
   0% {
     transform: translateX(0);
   }
   100% {
     transform: translateX(10px);
-  }
-}
-@-webkit-keyframes moveXR {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-10px);
   }
 }
 @keyframes moveXR {
@@ -2364,14 +2332,6 @@ input:-webkit-autofill {
     transform: translateX(-10px);
   }
 }
-@-webkit-keyframes moveYD {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(10px);
-  }
-}
 @keyframes moveYD {
   0% {
     transform: translateY(0);
@@ -2380,28 +2340,12 @@ input:-webkit-autofill {
     transform: translateY(10px);
   }
 }
-@-webkit-keyframes moveYU {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-10px);
-  }
-}
 @keyframes moveYU {
   0% {
     transform: translateY(0);
   }
   100% {
     transform: translateY(-10px);
-  }
-}
-@-webkit-keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }
 @keyframes rotate {
