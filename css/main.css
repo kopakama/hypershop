@@ -2037,6 +2037,9 @@ input:-webkit-autofill {
   transform: translateX(-50%);
   bottom: 220px;
 }
+.slick-slide {
+  outline: 0;
+}
 .questions {
   position: relative;
 }
