@@ -470,6 +470,9 @@ img {
   justify-content: space-between;
   height: 40px;
 }
+.phone--nav {
+  display: none;
+}
 .phone_num {
   display: block;
   font-size: 20px;
@@ -486,9 +489,10 @@ img {
     display: none;
     width: 100%;
     position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #ed8d8b;
+    padding-top: 52%;
+    left: -25px;
+    background-color: #131313;
+    text-align: center;
   }
   .nav.active {
     display: block;
