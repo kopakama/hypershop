@@ -1,0 +1,47 @@
+//main: main.less
+
+.thanks{
+    background: url("../img/thanks_bg.jpg") center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+
+    .intro{
+        background: none;
+        padding-bottom: 0;
+    }
+
+    .intro__title{
+        position: relative;
+    }
+
+    .footer{
+        background: none;
+        height: 240px;
+    }   
+
+    .features{
+        min-height: 0;
+        max-width: 332px;
+        margin: 25px 0;
+        font-size: 1.4rem;
+    }
+}
+
+.thanks__icon{
+    display: block;
+    background: url("../img/tick-inside-circle.png") no-repeat;
+    background-size: contain;
+    width: 50%;
+    height: 50%;
+
+    position: absolute;
+    top: 0;
+    left: 45%;
+}
+
+@media(max-width: 990px){
+    .thanks__icon{
+        display: none;
+    }
+}

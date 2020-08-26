@@ -16,7 +16,7 @@
     />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="header__inner">
         <div class="logo">
           <img
@@ -30,17 +30,17 @@
           </div>
         </div>
 
-        <nav class="nav">
-          <a href="#" class="nav__link">Главная</a>
-          <a href="#" class="nav__link">Видео</a>
-          <a href="#" class="nav__link">Возможности</a>
-          <a href="#" class="nav__link">Характеристики</a>
-          <a href="#" class="nav__link">Комплектация</a>
-          <a href="#" class="nav__link">Купить</a>
-          <a href="#" class="nav__link">Отзывы</a>
-          <a href="#" class="nav__link">Контакты</a>
+        <nav class="nav" id="nav">
+          <a href="#" class="nav__link" data-scroll="#intro">Главная</a>
+          <a href="#" class="nav__link" data-scroll="#video">Видео</a>
+          <a href="#" class="nav__link" data-scroll="#abilities">Возможности</a>
+          <a href="#" class="nav__link" data-scroll="#about">Характеристики</a>
+          <a href="#" class="nav__link" data-scroll="#complect">Комплектация</a>
+          <a href="#" class="nav__link" data-scroll="#buy_car">Купить</a>
+          <a href="#" class="nav__link" data-scroll="#reviews">Отзывы</a>
+          <a href="#" class="nav__link" data-scroll="#contacts">Контакты</a>
 
-          <div class="phone phone--nav">
+          <div class="phone--nav">
             <span class="phone_num">+7-954-486-62-88</span>
             <span class="phone_time">Ежедневно с 9:00 до 19:00</span>
           </div>
@@ -49,10 +49,10 @@
         
 
         <div class="contacts">
-          <a href="#" class="contacts__viber"
+          <a href="viber://chat?number=+000000000000" class="contacts__viber"  target="_blank"
             ><img src="img/viber.png" alt="viber"
           /></a>
-          <a href="#" class="contacts__whatsapp"
+          <a href="https://api.whatsapp.com/send?phone=0000000000" class="contacts__whatsapp"  target="_blank"
             ><img src="img/whatsapp.png" alt="whatsapp"
           /></a>
 
@@ -70,7 +70,7 @@
 
     <div class="page">
 
-      <div class="intro">
+      <div class="intro" id="intro">
         <div class="container">
           <div class="intro__inner">
             <h1 class="intro__title">Машина<br> трансформер</h1>
@@ -98,7 +98,7 @@
             <img class="intro__img" src="img/car_big.png" alt="car" />
 
             <div class="buy">
-              <a href="#" class="btn">Купить</a>
+              <a href="#" class="btn" data-scroll="#buy_car">Купить</a>
               <div class="price">
                 <div class="price__old">6 000 Р</div>
                 <div class="price__act">5 000 Р</div>
@@ -113,7 +113,7 @@
       </div>
       <!-- /.intro -->
 
-      <section class="video">
+      <section class="video" id="video">
         <div class="video__content">
           <div class="pic__item">
             <img src="img/video/stick1.png" alt="" />
@@ -129,7 +129,7 @@
           </div>
 
           <img class="video__img" src="img/video/bg.jpg" alt="" />
-          <button class="video__btn"></button>
+          <button class="video__btn" id="video_btn"></button>
           <div class="video__text">
             Посмотрите видео и узнайте о возможностях машинки
           </div>
@@ -137,7 +137,7 @@
         </div>
       </section>
 
-      <section class="abilities">
+      <section class="abilities" id="abilities">
         <div class="container">
           <h2 class="abilities__title">Возмож ности</h2>
 
@@ -185,7 +185,7 @@
               </div>
 
               <div class="buy buy--abilities">
-                <a href="#" class="btn btn--abilties">Купить</a>
+                <a href="#" class="btn btn--abilties" data-scroll="#buy_car">Купить</a>
                 <div class="price price--black">
                   <div class="price__old">6 000 Р</div>
                   <div class="price__act">5 000 Р</div>
@@ -199,7 +199,7 @@
       </section>
       <!-- /.abilities-->
 
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
           <div class="about__inner">
             <h2 class="about__title"><span>Технические</span> характеристики</h2>
@@ -229,7 +229,7 @@
       </section>
       <!-- about -->
 
-      <section class="complect">
+      <section class="complect" id="complect">
         <div class="container">
           <div class="complect__photo">
             <img class="dirt1" src="img/complect/dirt1.png" alt="" />
@@ -275,7 +275,7 @@
       </section>
       <!-- /.complect -->
 
-      <section class="buy-car">
+      <section class="buy-car" id="buy_car">
         <div class="container">
           <div class="buy-car__inner">
             <img class="buy-car__stick" src="img/buy-car/stick.png" alt="" />
@@ -316,7 +316,7 @@
             </div>
 
             <div class="buy-car__item">
-              <form action="#" class="order">
+              <form action="thanks.html" class="order">
                 <div class="form__title">
                   <span>купить</span> <br />машину трансформер
                 </div>
@@ -444,7 +444,7 @@
         </div>
       </section>
 
-      <section class="reviews">
+      <section class="reviews" id="reviews">
         <div class="bg__item"></div>
         <div class="bg__item"></div>
         <div class="bg__item"></div>
@@ -454,10 +454,10 @@
           <h2 class="reviews__title">Отзывы покупателей</h2>
 
           <div class="reviews__buttons">
-            <button class="btn btn--reviews ">Фото отзывы</button>
-            <button class="btn btn--reviews disactive">Видео отзывы</button>
+            <button class="btn btn--reviews" id="btn_photo">Фото отзывы</button>
+            <button class="btn btn--reviews disactive" id="btn_video">Видео отзывы</button>
           </div>
-          <div class="gallery gallery--photo" id="gallery--photo">
+          <div class="gallery gallery--photo active" id="gallery_photo">
             <div class="gallery__item">
               <img class="gallery__img"src="img/reviews/review.png" alt="" />
             </div>
@@ -496,7 +496,7 @@
             </div>
           </div>
 
-          <div class="gallery gallery--video" id="gallery--video">
+          <div class="gallery gallery--video" id="gallery_video">
             <div class="gallery__item">
               <iframe class="gallery__img" width="488" height="332"
               src="https://www.youtube.com/embed/tgbNymZ7vqY">
@@ -661,7 +661,7 @@
 
             <div class="questions__item">
               <div class="questions-item__inner">
-              <form action="#" class="order">
+              <form action="thanks.html" class="order">
                 
                 <div class="form-text">
                   <div class="form__title">
@@ -714,19 +714,19 @@
               <div class="contacts">
                 <div class="contacts-text">или свяжитесь в мессенджерах:</div>
                 <div class="contacts__inner">
-                  <a href="#" class="contacts__viber"
-                    ><img src="img/viber.png" alt="viber"
-                  /></a>
-                  <a href="#" class="contacts__whatsapp"
-                    ><img src="img/whatsapp.png" alt="whatsapp"
-                  /></a>
+                  <a href="viber://chat?number=+000000000000" class="contacts__viber"  target="_blank"
+            ><img src="img/viber.png" alt="viber"
+          /></a>
+          <a href="https://api.whatsapp.com/send?phone=0000000000" class="contacts__whatsapp"  target="_blank"
+            ><img src="img/whatsapp.png" alt="whatsapp"
+          /></a>
                 </div>
             </div>
           </div> <!-- /.questions__inner -->
         </div> <!-- /.container -->
       </section>
 
-      <footer class="footer">
+      <footer class="footer" id="contacts">
         <div class="footer__logo">
           <img
             class="logo__img"
@@ -746,6 +746,17 @@
           MurStyleDesign</div>
       </footer>
     </div>
+
+    <div id="modal_form"><!-- Сaмo oкнo -->
+      <span class="modal_close">x</span> <!-- Кнoпкa зaкрыть -->
+      <!-- Тут любoе сoдержимoе -->
+        <center>
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/cFvwjQzQcdo?enablejsapi=1" frameborder="0" allowfullscreen id='v1'></iframe>
+        </center>
+    </div>
+ 
+    <div id="overlay">
+    </div><!-- Пoдлoжкa -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/jquery.mask.js"></script>

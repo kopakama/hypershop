@@ -80,6 +80,61 @@ img {
   width: 175%;
   height: 175%;
 }
+#modal_form {
+  width: 700px;
+  height: 550px;
+  /* Рaзмеры дoлжны быть фиксирoвaны */
+  position: fixed;
+  /* чтoбы oкнo былo в видимoй зoне в любoм месте */
+  top: 45%;
+  /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
+  left: 50%;
+  /* пoлoвинa экрaнa слевa */
+  margin-top: -275px;
+  margin-left: -350px;
+  /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
+  display: none;
+  /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
+  opacity: 0;
+  /* пoлнoстью прoзрaчнo для aнимирoвaния */
+  z-index: 9999;
+  /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+  padding: 20px 10px;
+}
+/* Пoдлoжкa */
+#overlay {
+  z-index: 9998;
+  /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+  position: fixed;
+  /* всегдa перекрывaет весь сaйт */
+  background-color: #000;
+  /* чернaя */
+  opacity: 0.98;
+  /* нo немнoгo прoзрaчнa */
+  -moz-opacity: 0.98;
+  /* фикс прозрачности для старых браузеров */
+  filter: alpha(opacity=80);
+  width: 100%;
+  height: 100%;
+  /* рaзмерoм вo весь экрaн */
+  top: 0;
+  /* сверху и слевa 0, oбязaтельные свoйствa! */
+  left: 0;
+  cursor: pointer;
+  display: none;
+  /* в oбычнoм сoстoянии её нет) */
+}
+/* Кнoпкa зaкрыть для тех ктo в тaнке) */
+.modal_close {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: block;
+  color: white;
+}
 .intro {
   background: url(../img/intro/bg.jpg) center no-repeat;
   background-size: cover;
@@ -288,6 +343,16 @@ img {
   width: 100%;
   margin-top: 39px;
 }
+.header.fixed {
+  padding: 20px 0 15px;
+  background-color: #131313;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: -39px;
+  left: 0;
+  z-index: 10000;
+  transform: translate3d(0, 0, 0);
+}
 .header__inner {
   display: flex;
   justify-content: space-between;
@@ -312,7 +377,7 @@ img {
   color: #f3f1f7;
 }
 .nav a:hover {
-  text-decoration: underline;
+  color: #379118;
 }
 .nav__link {
   margin-left: 10px;
@@ -353,7 +418,7 @@ img {
   background-color: #fff;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 1px;
   right: 0;
   bottom: 0;
   margin: auto;
@@ -370,10 +435,10 @@ img {
   transition: transform 0.2s linear;
 }
 .nav-toggle__item::before {
-  top: -5px;
+  top: -4px;
 }
 .nav-toggle__item::after {
-  bottom: -5px;
+  bottom: -4px;
 }
 .nav-toggle.active .nav-toggle__item {
   background: none;
@@ -472,6 +537,7 @@ img {
 }
 .phone--nav {
   display: none;
+  margin: 10px 0 27px;
 }
 .phone_num {
   display: block;
@@ -489,12 +555,18 @@ img {
     display: none;
     width: 100%;
     position: absolute;
-    padding-top: 52%;
+    padding-top: 434px;
     left: -25px;
     background-color: #131313;
     text-align: center;
+    z-index: -1;
+    animation: slide-down 0.3s ease-out;
   }
   .nav.active {
+    display: block;
+    animation: slide-down 0.3s ease-out;
+  }
+  .nav.active .phone--nav {
     display: block;
   }
   .nav-toggle {
@@ -526,6 +598,7 @@ img {
   }
   .logo__text {
     letter-spacing: 0.82px;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 547px) {
@@ -1768,7 +1841,7 @@ input:-webkit-autofill {
   right: 0;
 }
 .btn--reviews {
-  padding: 13px 13px;
+  padding: 15px 15px;
   max-width: 240px;
 }
 .btn.disactive {
@@ -1776,6 +1849,7 @@ input:-webkit-autofill {
   border-radius: 10px;
   border: 2px solid #000000;
   box-shadow: none;
+  padding: 13px 13px;
   color: #348715;
 }
 .gallery {
@@ -1784,6 +1858,12 @@ input:-webkit-autofill {
   z-index: 2;
   padding: 0px 147px;
 }
+.gallery.slick-slider {
+  visibility: hidden;
+}
+.slick-slider.active {
+  visibility: visible;
+}
 .gallery__item {
   outline: none;
   height: 522px;
@@ -1791,12 +1871,11 @@ input:-webkit-autofill {
 .gallery__img {
   margin: 0 auto;
 }
-.gallery--video.slick-slider {
-  display: none;
-}
 .gallery--video {
   max-height: 367px;
-  max-width: 1020px;
+  max-width: 1150px;
+  padding: 0px 73px;
+  margin-top: -480px;
 }
 .gallery--video .gallery__img {
   border: none;
@@ -2268,7 +2347,7 @@ input:-webkit-autofill {
   max-width: 505px;
   position: absolute;
   left: 53px;
-  bottom: 40px;
+  bottom: 30px;
 }
 .logo__politics {
   display: block;
@@ -2310,15 +2389,15 @@ input:-webkit-autofill {
     align-items: center;
     padding-top: 110px;
   }
+  .footer .logo__text {
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 10px;
+  }
   .footer__logo {
     position: static;
     flex-direction: column;
     align-items: center;
-  }
-  .logo__text {
-    text-align: center;
-    line-height: 1.8;
-    margin-bottom: 10px;
   }
   .logo__img {
     margin-bottom: 25px;
@@ -2369,9 +2448,64 @@ input:-webkit-autofill {
     transform: rotate(360deg);
   }
 }
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.thanks {
+  background: url("../img/thanks_bg.jpg") center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+.thanks .intro {
+  background: none;
+  padding-bottom: 0;
+}
+.thanks .intro__title {
+  position: relative;
+}
+.thanks .footer {
+  background: none;
+  height: 240px;
+}
+.thanks .features {
+  min-height: 0;
+  max-width: 332px;
+  margin: 25px 0;
+  font-size: 1.4rem;
+}
+.thanks__icon {
+  display: block;
+  background: url("../img/tick-inside-circle.png") no-repeat;
+  background-size: contain;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  left: 45%;
+}
+@media (max-width: 990px) {
+  .thanks__icon {
+    display: none;
+  }
+}
 @media (max-width: 1140px) {
   html {
     font-size: 9px;
+  }
+}
+@media (max-width: 700px) {
+  #modal_form {
+    width: 420px;
+    height: 340px;
+    left: 75%;
   }
 }
 @media (max-width: 575px) {
@@ -2379,8 +2513,22 @@ input:-webkit-autofill {
     font-size: 7px;
   }
 }
+@media (max-width: 480px) {
+  #modal_form {
+    width: 380px;
+    height: 300px;
+    left: 84%;
+    transform: translateX(5%);
+  }
+}
 @media (max-width: 420px) {
   html {
     font-size: 6px;
+  }
+  #modal_form {
+    width: 310px;
+    height: 250px;
+    left: 45%;
+    transform: translateX(70%);
   }
 }
