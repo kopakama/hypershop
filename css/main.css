@@ -2257,6 +2257,8 @@ input:-webkit-autofill {
 .accordion {
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 1;
 }
 .accordion__item {
   border: none;
