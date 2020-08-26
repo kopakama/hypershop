@@ -2513,7 +2513,7 @@ input:-webkit-autofill {
     width: 420px;
     height: 340px;
     left: 75%;
-    top: 63%;
+    top: 63% !important;
   }
 }
 @media (max-width: 575px) {
