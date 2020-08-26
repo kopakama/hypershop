@@ -168,7 +168,6 @@ $('.gallery--video').slick({
         slidesToScroll: 1,
         infinite: true,
         dots: true,
-        //autoplay: true
       }
     },
     {
@@ -179,6 +178,7 @@ $('.gallery--video').slick({
         infinite: true,
         dots: true,
         arrows: false,
+        autoplay: true
       }
     },
   ]
