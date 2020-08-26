@@ -54,11 +54,10 @@ img {
 .circles {
   width: 512px;
   height: 512px;
-  border-radius: 50%;
-  border: 1px solid #d7d7d7;
+  border-radius: 100%;
 
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate3d(-50%, -50%, 0);
   z-index: -1;
@@ -67,21 +66,32 @@ img {
   
 }
 
-.circles::after {
+.circles::after,
+.circles::before {
   content: "";
-  width: 886px;
-  height: 886px;
-  border-radius: 50%;
-  border: 1px solid #d7d7d7;
+    border-radius: 50%;
+    border: 1px solid #c1c1c1;
 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -50%, 0);
-  z-index: -1;
+    position: absolute;
+    left: -10px;
+    right: -10px;
+    top: -10px;
+    bottom: -10px;
+    border-radius: 50%;
+    animation: pulse 7s linear infinite;
+    opacity: 0;
+    z-index: -1;
   //animation: pulse 5s infinite linear;
-  
 }
+
+.circles::before{
+  animation-delay: 5s;
+}
+
+.circles--min{
+  z-index: 0;
+}
+
 
 .circles--bt {
   width: 60%;
@@ -89,20 +99,6 @@ img {
   top: 70%;
 }
 
-.circles--bt::after {
-  width: 193%;
-  height: 175%;
-}
-
-.circles--min {
-  width: 67%;
-  height: 67%;
-}
-
-.circles--min::after {
-  width: 175%;
-  height: 175%;
-}
 
 #modal_form {
   width: 700px; 
