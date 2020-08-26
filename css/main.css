@@ -821,9 +821,6 @@ img {
   left: 50%;
   transform: translate3d(-50%, -76%, 0);
 }
-.abilities__img {
-  animation: moveXR 2s infinite alternate;
-}
 .abilities__photo::after {
   content: "";
   background-image: url("../img/car-shadow.png");
@@ -2463,6 +2460,15 @@ input:-webkit-autofill {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
   }
 }
 .thanks {
