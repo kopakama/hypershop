@@ -1980,7 +1980,7 @@ input:-webkit-autofill {
 }
 .easy .slick-list {
   overflow: visible !important;
-  transform: translate3d(0, 30%, 0) !important;
+  transform: translate3d(0, 100%, 0) !important;
 }
 .easy .slick-dots {
   bottom: 324px;
